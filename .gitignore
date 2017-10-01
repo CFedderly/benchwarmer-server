@@ -99,3 +99,9 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# vscode files
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
