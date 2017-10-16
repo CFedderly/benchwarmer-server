@@ -2,19 +2,13 @@
 Server side for sub finding app. Tentatively, Python, Django, PostgreSQL.
 
 ## Setup
-Install python 3:  
-Windows - https://www.python.org/downloads/windows/  
-Linux - `$sudo apt-get install python3.4`  
-  
-Create virtual environment:  
-`$ pip install virtualenv`  
-`$ virtualenv <virtualenv-directory>/benchwarmer`  
+Install Docker:  
+Linux - https://docs.docker.com/engine/installation/linux/docker-ee/ubuntu/#install-using-the-repository  
+Windows Pro/Enterprise Edition - https://docs.docker.com/docker-for-windows/install/  
+Windows Home Edition - https://docs.docker.com/toolbox/toolbox_install_windows/  
 
-Activate virtual environment:  
-`$ source <virtualenv-directory>/benchwarmer/Scripts/activate`
+Run the Container:  
+`/benchwarmer-server$ docker-compose up`  
 
-Install project python dependencies:  
-`(benchwarmer)$ pip install -r requirements.txt`  
-
-Run the server:  
-`(benchwarmer)$ python benchwarmer/manage.py runserver`
+Rebuild the Image and Run the Container:  
+`/benchwarmer-server$ docker-compose up --build`  
