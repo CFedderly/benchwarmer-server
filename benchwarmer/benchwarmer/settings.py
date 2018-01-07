@@ -25,7 +25,12 @@ SECRET_KEY = 'jd@)kuag8s1ag=beu2c=sl9&6f48(lw)wr=!v0dk1_2g3$i1q1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '0.0.0.0',
+    '192.168.99.100' # default hostname of linux virtualbox VM on Windows
+]
 
 
 # Application definition
